@@ -33,15 +33,19 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Development Plan (Phase 1)
 _Phase 1 focuses on replicating the UI only. Database and API will be addressed in Phase 2_
 
-1. Analyze front page
+1. ~~Analyze front page~~ _DONE_
  * ~~Determine the major functional components~~
  * ~~Determine UI behavior, e.g., responsiveness, rollovers~~
-1. Collect assets
-1. Create components in project
-1. Build components
+1. ~~Collect assets~~ _DONE_
+1. ~~Create components in project~~ _DONE_
+1. For each: Build component
+ * Basic layout
+ * Add images
+ * Apply styling
+ * Add UI behaviors
 
 ### Assumptions
-Phase 1 will build out the desktop version first. 
+Phase 1 will build out the desktop version first.
 
 ### Target Audience/Users
 * People who appreciate good food
@@ -96,7 +100,7 @@ _spec_ | _input_ | _output_
 * Sass with variables and mixins
 * Angular5
 * Firebase
-* Tested with Karma and Jasmine
+* Tested with Karma and Protractor
 
 ### License
 [MIT](./LICENSE.txt)
