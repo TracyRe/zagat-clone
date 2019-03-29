@@ -21,12 +21,23 @@ _Author_ **Tracy Reith**
 ### Description
 A re-creation of the Zagat website, made with Angular5, using a Firebase database and Google Maps API. Created for Epicodus Front End Development course.
 
+Zagat is a guide to restaurants in major cities in the United States. Content is a mix of professional and  user-generated reviews.  
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
 ### Learning Objective
 * Practice using Angular5
 * Apply best practices of Model-View-Component architecture
 * Practice using API
+
+## Development Plan (Phase 1)
+_Phase 1 focuses on replicating the UI only. Database and API will be addressed in Phase 2_
+1. Analyze front page
+ * Determine the major functional components
+ * Determine UI behavior, e.g., responsiveness, rollovers
+1. Collect assets
+1. Create components in project
+1. Build components
 
 ### Target Audience/Users
 * People who appreciate good food
