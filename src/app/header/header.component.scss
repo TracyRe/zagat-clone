@@ -6,12 +6,25 @@
 .header {
   height: 80px;
   border-bottom: 1px solid $linecolor;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
 
-  .logo-container {
-    @include size(216px,100%);
+  .container {
     border-right: 1px solid $linecolor;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .logo-container {
+    @include size(216px,100%);
+    flex: none;
+  }
+
+  .search-container {
+    @include size(35vw,100%);
+    flex: grow;
   }
 }
