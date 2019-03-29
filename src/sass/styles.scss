@@ -6,3 +6,15 @@
   box-sizing: border-box;
   // @include border(1px, #f0f); //Troubleshooting
 }
+
+a {
+  color: $textcolor;
+}
+
+a:hover, a:active {
+  color: $zagatred;
+}
+
+.zagat-logo-paths {
+  fill: $zagatred;
+}
