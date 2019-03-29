@@ -21,10 +21,11 @@
       weight: bold;
       style: italic;
     }
+    color: $textcolor;
   }
 
-  h2, h3 {
-    color: $textcolor;
+  h3 {
+    color: $textsecondary;
 
   }
 }

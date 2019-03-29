@@ -24,10 +24,12 @@ body {
     size: 14px;
     color: $textcolor;
   }
+  background-color: $bgcolor;
 }
 
 h1, h2, h3 {
   color: $textcolor;
+  font-weight: normal;
 }
 
 a {
