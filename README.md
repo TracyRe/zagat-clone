@@ -32,8 +32,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development Plan (Phase 1)
 _Phase 1 focuses on replicating the UI only. Database and API will be addressed in Phase 2_
-1. Analyze front page
- * Determine the major functional components
+1. Analyze front page 
+ * ~~Determine the major functional components~~
  * Determine UI behavior, e.g., responsiveness, rollovers
 1. Collect assets
 1. Create components in project
