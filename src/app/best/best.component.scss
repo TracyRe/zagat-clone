@@ -21,8 +21,8 @@
   height: 320px;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
-  align-content: space-around;
+  justify-content: space-around;
+  align-items: center;
   h1 {
     font: {
       family: 'DomaineTextTest-BlackItalic', 'Times New Roman', serif;
@@ -33,7 +33,7 @@
     color: #fff;
   }
   .focus-button-row {
-    max-width: 445px;
+    width: 445px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
