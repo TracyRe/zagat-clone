@@ -1,0 +1,30 @@
+@import '~sass/variables';
+@import '~sass/mixins';
+@import '~sass/styles';
+
+.latest-container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3,375px);
+  grid-template-rows: repeat(4,120px);
+  grid-column-gap: 40px;
+  grid-row-gap: 30px;
+}
+
+.latest-header, .latest-footer {
+  text-align: center;
+
+  h2 {
+    font: {
+      family: 'DomaineTextTest-BlackItalic', 'Times New Roman', serif;
+      size: 20px;
+      weight: bold;
+      style: italic;
+    }
+  }
+
+  h2, h3 {
+    color: $textcolor;
+
+  }
+}

@@ -19,7 +19,7 @@ _Author_ **Tracy Reith**
 1. [License](#license)
 
 ### Description
-A re-creation of the Zagat website, made with Angular5, using a Firebase database and Google Maps API. Created for Epicodus Front End Development course.
+A re-creation of the [Zagat website](https://www.zagat.com/portland), made with Angular5, using a Firebase database and Google Maps API. Created for Epicodus Front End Development course.
 
 Zagat is a guide to restaurants in major cities in the United States. Content is a mix of professional and  user-generated reviews.  
 
