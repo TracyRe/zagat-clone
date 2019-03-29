@@ -32,12 +32,16 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development Plan (Phase 1)
 _Phase 1 focuses on replicating the UI only. Database and API will be addressed in Phase 2_
-1. Analyze front page 
+
+1. Analyze front page
  * ~~Determine the major functional components~~
- * Determine UI behavior, e.g., responsiveness, rollovers
+ * ~~Determine UI behavior, e.g., responsiveness, rollovers~~
 1. Collect assets
 1. Create components in project
 1. Build components
+
+### Assumptions
+Phase 1 will build out the desktop version first. 
 
 ### Target Audience/Users
 * People who appreciate good food
