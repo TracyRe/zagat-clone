@@ -1,0 +1,22 @@
+@import '~sass/variables';
+@import '~sass/mixins';
+@import '~sass/styles';
+
+.focus-container {
+  @include size(100%, 400px);
+  @include cushion(0, 0 auto);
+  max-width: 1200px;
+  max-height: 400px;
+  // @include border(1px, #fff);
+  background-image: url(../../assets/img/portland.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0% 50%;
+  background-color: blue;
+  .focus-content {
+    @include border(2px, #fff);
+    @include cushion(40px, 40px);
+    height: 320px;
+
+  }
+}
