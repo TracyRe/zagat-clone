@@ -34,6 +34,8 @@ npm-debug.log
 testem.log
 /typings
 .env
+extra.txt
+svg-icon-code.txt
 
 # e2e
 /e2e/*.js
