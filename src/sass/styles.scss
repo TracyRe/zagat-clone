@@ -28,10 +28,12 @@ body {
 
 a {
   color: $textcolor;
+  text-decoration: none;
 }
 
 a:hover, a:active {
   color: $zagatred;
+  text-decoration: none;
 }
 
 .zagat-logo-paths {

@@ -12,11 +12,41 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0% 50%;
-  background-color: blue;
-  .focus-content {
-    @include border(2px, #fff);
-    @include cushion(40px, 40px);
-    height: 320px;
+  background-color: blue; // this lets me know if the photo is not covering the area as it should
+}
 
+.focus-content {
+  @include border(2px, #fff);
+  @include cushion(40px, 40px);
+  height: 320px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: space-around;
+  h1 {
+    font: {
+      family: 'DomaineTextTest-BlackItalic', 'Times New Roman', serif;
+      size: 40px;
+      weight: bold;
+      style: italic;
+    }
+    color: #fff;
+  }
+  .focus-button-row {
+    max-width: 445px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    text-transform: uppercase;
+    color: #fff;
+
+    a {
+      color: #fff;
+    }
+
+    a:hover, a:active {
+      color: $zagatred;
+      text-decoration: none;
+    }
   }
 }
