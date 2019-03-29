@@ -1,0 +1,8 @@
+@import './mixins.scss';
+@import './variables.scss';
+
+* {
+  @include cushion(0,0);
+  box-sizing: border-box;
+  // @include border(1px, #f0f); //Troubleshooting
+}

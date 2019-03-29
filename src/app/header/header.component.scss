@@ -1,0 +1,10 @@
+@import '~sass/variables';
+@import '~sass/mixins';
+@import '~sass/styles';
+
+
+.header {
+  height: 80px;
+  border-bottom: 1px solid $linecolor;
+
+}

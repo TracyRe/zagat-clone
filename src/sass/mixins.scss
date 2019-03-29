@@ -1,0 +1,56 @@
+// mixins
+@mixin border($size, $color) {
+  border: $size solid $color;
+}
+
+@mixin cushion($padding, $margin) {
+  padding: $padding;
+  margin: $margin;
+}
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin min-max-width($min-width, $max-width) {
+  min-width: $min-width;
+  max-width: $max-width;
+}
+
+// media queries
+@mixin min-456 {
+  @media screen and (min-width: 456px) {
+    @content;
+  }
+}
+
+@mixin min-600 {
+  @media screen and (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin min-768 {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin min-960 {
+  @media screen and (min-width: 960px) {
+    @content;
+  }
+}
+
+@mixin min-1255 {
+  @media screen and (min-width: 1255px) {
+    @content;
+  }
+}
+
+@mixin min-1600 {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
+}
