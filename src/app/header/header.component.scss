@@ -13,19 +13,25 @@
   border-bottom: 1px solid $linecolor;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: stretch;
-
+  align-content: stretch;
 
   .container {
     border-right: 1px solid $linecolor;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: $textdetail;
+  }
+
+  .container:last-of-type {
+    // @include border(1px, #00f);
+    border-right: 0;
+    // display: 2 0 auto;
+    width: auto;
   }
 
   .logo {
     @include size(216px,100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex: none;
     background: #fff;
     cursor: pointer;
@@ -37,14 +43,50 @@
     }
   }
 
-  .search-container {
+  .search {
+    // @include border(1px, #00f);
     @include size(35vw,100%);
-    flex: grow;
-  }
+    @include min-max-width(338px,538px);
+    // flex: 0 1 auto;
+    }
 
-  .nav-container {
+  .nav  {
+    // @include border(1px, #0f0);
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
     align-items: center;
+    justify-content: flex-end;
+    flex: 2 0 auto;
+    padding-right: 48px;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    a {
+      font-size: .8rem;
+      color: $textdetail;
+      padding-left: 2rem;
+    }
+    a:hover, a:active {
+      color: $zagatred;
+    }
+    a.location {
+      background-image: url('../../assets/img/chevron-down12.jpg');
+      background-repeat: no-repeat;
+      background-position: right;
+      padding-right: 18px;
+    }
+    a.location:hover, a.location:active {
+      background-image: url('../../assets/img/chevron-down12-hover.jpg');
+      background-repeat: no-repeat;
+      background-position: right;
+    }
   }
+}
+
+.search-header {
+  // @include border(1px, #f0f);
+  @include size(auto, auto);
+  @include cushion(4px 36px 18px 36px, 28px 20px 18px 20px);
+  border-bottom: 1px solid $linecolor;
+  background-image: url('../../assets/img/search-icon20.jpg');
+  background-repeat: no-repeat;
 }
