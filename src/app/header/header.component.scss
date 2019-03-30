@@ -4,6 +4,9 @@
 
 
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   background: #fff;
   height: 80px;
   border-bottom: 1px solid $linecolor;
@@ -11,6 +14,7 @@
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: stretch;
+
 
   .container {
     border-right: 1px solid $linecolor;
