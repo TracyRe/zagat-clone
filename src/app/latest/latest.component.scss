@@ -11,15 +11,13 @@
   grid-column-gap: 40px;
 }
 
-.latest-col1-container-container {
-
+.latest-col1-container {
 }
 
-.latest-col2-container-container {
+.latest-col2-container {
 }
 
-.latest-col3-container-container {
-
+.latest-col3-container {
 }
 
 .card1 {
@@ -54,21 +52,151 @@
     justify-content: space-between;
     h2 {
       font: {
-        family: 'DomaineTextTest-BlackItalic', 'Times New Roman', serif;
-        size: 24px;
+        family: $stylefont;
+        size: 1.6rem;
         weight: bold;
         style: italic;
       }
       color: $textcolor;
       // @include border(1px, #00f);
     }
-    p {
+    .date, .place-count {
       // @include border(1px, #0ff);
-      color: $textsecondary;
+      color: $textdetail;
+      font-size: .8rem
     }
   }
-
 }
+
+.card2, .card3 {
+  @include size(375px, 272px);
+  // @include border(1px, #0f0);
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  .image {
+    @include size(375px, 146px);
+    // @include border(1px, #f0f);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 50%;
+    background-color: blue; // this lets me know if the photo is not covering the area as it should
+  }
+  .textblock {
+    // @include border(1px, #ff0);
+    @include size(80%, 125px);
+    position: absolute;
+    left: 0px;
+    top: 146px;
+    // bottom: 0;
+    padding: 13px 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    h2 {
+      font: {
+        family: $basefont;
+        size: 1rem;
+        weight: normal;
+      }
+      line-height: 140%;
+      color: $textcolor;
+      // @include border(1px, #00f);
+    }
+    .date, .place-count {
+      // @include border(1px, #0ff);
+      color: $textdetail;
+      font-size: .8rem
+
+    }
+  }
+}
+
+.card4, .card5, .card6, .card7 {
+  @include size(375px, 121px);
+  // @include border(1px, #0f0);
+  position:relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  .image {
+    @include size(121px, 121px);
+    // @include border(1px, #f0f);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 50%;
+    background-color: blue; // this lets me know if the photo is not covering the area as it should
+  }
+  .textblock {
+    @include size(255px,121px);
+    // @include border(1px, #ff0);
+    // position: absolute;
+    // left: 0px;
+    // top: 146px;
+    // bottom: 0;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    h2 {
+      font: {
+        family: $basefont;
+        size: 1rem;
+        weight: normal;
+      }
+      line-height: 140%;
+      color: $textcolor;
+      // white-space: nowrap;
+      // overflow: hidden;
+      // text-overflow: ellipsis;
+      // @include border(1px, #00f);
+    }
+  }
+}
+
+.card2 {
+  .image {
+    background-image: url(../../assets/img/Manbitesdog_Zagat_4b7192ca0b9e3d46b94e4d8562bb9261.jpg);
+  }
+}
+
+.card3 {
+  .image {
+    background-image: url(../../assets/img/45a8bbb9b7dd65593df22fdadf7b27cd.jpg);
+  }
+}
+
+.card4 {
+  .image {
+    background-image: url(../../assets/img/Portland_Museum_of_Art_Cred_Pressphoto.jpg);
+  }
+}
+
+.card5 {
+  .image {
+    background-image: url(../../assets/img/Forest-Park-Old-Growth_Cred_TravelPortland.jpg);
+  }
+}
+
+.card6 {
+  .image {
+    background-image: url(../../assets/img/Feast_2017_AlanWeiner_091917.jpg);
+  }
+}
+
+.card7 {
+  .image {
+    background-image: url(../../assets/img/Feast_PDX_Jackie_Varriano11_091916.jpg);
+  }
+}
+
+
 
 .card2, .card5 {
   margin-bottom: 40px;
@@ -81,6 +209,7 @@
   background: #fff;
 }
 
+
 .latest-header {
   // @include border(1px, #f00);
   @include size(412px,153px);
@@ -91,15 +220,14 @@
   justify-content: center;
   align-content: center;
   position: relative;
-
   .rule {
     @include size(100%, 60px);
     border-bottom: 1px solid $textsecondary;
     z-index: 0;
-
   }
   h2 {
     // @include border(1px, #00f);
+    @include size(170px,20px);
     font: {
       family: 'DomaineTextTest-BlackItalic', 'Times New Roman', serif;
       size: 24px;
@@ -107,26 +235,50 @@
       style: italic;
     }
     color: $textcolor;
-    @include size(170px,20px);
     background: $bgcolor;
     z-index: 10;
+    text-align: center;
     align-self: center;
     position: absolute;
     top: 74px;
   }
-}
-
-.latest-header, .latest-footer {
-  width: 412px;
-  text-align: center;
-
-
   h3 {
     color: $textsecondary;
     text-transform: uppercase;
     font-size: .8rem;
     letter-spacing: .1rem;
     margin-top: 18px;
+    text-align: center;
+  }
+}
 
+.latest-footer {
+  // @include border(1px, #00f);
+  @include size(100%,124px);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    @include border(2px, $zagatred);
+    @include size(195px, 40px);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: $zagatred;
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: .1rem;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: $zagatred;
+    color: #fff;
   }
 }
