@@ -24,9 +24,17 @@
     align-items: center;
   }
 
-  .logo-container {
+  .logo {
     @include size(216px,100%);
     flex: none;
+    background: #fff;
+    cursor: pointer;
+  }
+  .logo:hover, .logo:active {
+    background: $zagatred;
+    .zagat-logo-paths {
+      fill: #fff;
+    }
   }
 
   .search-container {
