@@ -2,27 +2,88 @@
 @import '~sass/mixins';
 @import '~sass/styles';
 
-.latest-container {
+.latest-outer-container {
+  width: 1260px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3,375px);
-  grid-template-rows: repeat(4,120px);
+  grid-template-rows: 1fr;
   grid-column-gap: 40px;
-  grid-row-gap: 30px;
 }
+
+.latest-col1-container-container {
+
+}
+
+.latest-col2-container-container {
+}
+
+.latest-col3-container-container {
+
+}
+
+.card1 {
+  @include size(375px, 580px);
+  @include border(1px, #0f0);
+  position:relative;
+  display: flex;
+  flex: column nowrap;
+  justify-content: space-between;
+  .image {
+    @include size(375px, 380px);
+    @include border(1px, #f0f);
+    background-image: url(../../assets/img/Tusk._Aj_Meeker.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 50%;
+    background-color: blue; // this lets me know if the photo is not covering the area as it should
+  }
+  .textblock {
+    @include border(1px, #ff0);
+    position: absolute;
+    left: 0px;
+    top: 380px;
+    // bottom: 0;
+    height: 200px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    h2 {
+      font: {
+        family: 'DomaineTextTest-BlackItalic', 'Times New Roman', serif;
+        size: 30px;
+        weight: bold;
+        style: italic;
+      }
+      color: $textcolor;
+      @include border(1px, #00f);
+    }
+    p {
+      @include border(1px, #0ff);
+      color: $textsecondary;
+    }
+  }
+
+}
+
+.card2, .card5 {
+  margin-bottom: 40px;
+}
+
+.card4, .card6 {
+  margin-bottom: 30px;
+}
+.spotlight {
+  background: #fff;
+}
+
 
 .latest-header, .latest-footer {
   text-align: center;
 
-  h2 {
-    font: {
-      family: 'DomaineTextTest-BlackItalic', 'Times New Roman', serif;
-      size: 20px;
-      weight: bold;
-      style: italic;
-    }
-    color: $textcolor;
-  }
 
   h3 {
     color: $textsecondary;
