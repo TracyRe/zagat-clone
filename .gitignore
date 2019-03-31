@@ -36,6 +36,7 @@ testem.log
 .env
 extra.txt
 svg-icon-code.txt
+*.afphoto
 
 # e2e
 /e2e/*.js
