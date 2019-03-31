@@ -23,7 +23,6 @@
   .container:last-of-type {
     // @include border(1px, #00f);
     border-right: 0;
-    // display: 2 0 auto;
     width: auto;
   }
 
@@ -43,13 +42,6 @@
     }
   }
 
-  .search {
-    // @include border(1px, #00f);
-    @include size(35vw,100%);
-    @include min-max-width(338px,538px);
-    // flex: 0 1 auto;
-    }
-
   .nav  {
     // @include border(1px, #0f0);
     display: flex;
@@ -61,7 +53,7 @@
     text-transform: uppercase;
     letter-spacing: .1rem;
     a {
-      font-size: .8rem;
+      font-size: .9rem;
       color: $textdetail;
       padding-left: 2rem;
     }
@@ -82,11 +74,21 @@
   }
 }
 
-.search-header {
-  // @include border(1px, #f0f);
-  @include size(auto, auto);
-  @include cushion(4px 36px 18px 36px, 28px 20px 18px 20px);
-  border-bottom: 1px solid $linecolor;
-  background-image: url('../../assets/img/search-icon20.jpg');
-  background-repeat: no-repeat;
+.search {
+  // @include border(1px, #00f);
+  @include size(35vw,100%);
+  @include min-max-width(338px,538px);
+
+  .search-header {
+    // @include border(1px, #f0f);
+    @include size(auto, auto);
+    @include cushion(4px 36px 18px 36px, 28px 20px 18px 20px);
+    border-bottom: 1px solid $linecolor;
+    background-image: url('../../assets/img/search-icon20.jpg');
+    background-repeat: no-repeat;
+    font-size: 1.05rem;
+    color: $textdetail;
+    letter-spacing: 0.013rem;
+    font-family: $lightfont;
+  }
 }

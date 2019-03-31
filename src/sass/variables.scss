@@ -1,9 +1,48 @@
 // variables
+@font-face {
+  font-family: 'CalibreTest-Light';
+  src: url('~/fonts/calibretest-light.woff') format('woff'); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CalibreTest-Regular';
+  src: url('~/fonts/calibretest-regular.woff') format('woff'); /* Modern Browsers */
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CalibreTest-Medium';
+  src: url('~/fonts/calibretest-medium.woff') format('woff'); /* Modern Browsers */
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CalibreTest-Semibold';
+  src: url('~/fonts/calibretest-semibold.woff') format('woff'); /* Modern Browsers */
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DomaineTextTest-BlackItalic';
+  src: url('~/fonts/domainetexttest-blackitalic.woff') format('woff'); /* Modern Browsers */
+  font-weight: bold;
+  font-style: italic;
+}
+
+
 $bgcolor: #f1f1f2;
 $basefont: 'CalibreTest-Regular', 'Helvetica', 'Arial', sans-serif;
+$boldfont: 'CalibreTest-Semibold', 'Helvetica', 'Arial', sans-serif;
+$lightfont: 'CalibreTest-Light', 'Helvetica', 'Arial', sans-serif;
 $stylefont: 'DomaineTextTest-BlackItalic', 'Times Bold Italic', serif;
 $textcolor: #101820;
 $textsecondary: #9b9b9b;
 $textdetail: #656666;
 $zagatred: #b60838;
 $linecolor: #cfd2d3;
+$reverse: #ffffff;

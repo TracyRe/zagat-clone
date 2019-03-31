@@ -1,0 +1,169 @@
+@import '~sass/variables';
+@import '~sass/mixins';
+@import '~sass/styles';
+
+.social-container {
+  @include size(100%, 206px);
+  background: $textcolor;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.media, .newsletter-signup {
+  @include size(50%, calc(100%-80px));
+  @include cushion(0, 30px);
+
+}
+
+.media {
+  // @include border(1px, #f0f);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: center;
+  padding-right: 20px;
+
+  a {
+    @include size(48px,48px);
+    @include border(1px, $reverse);
+    border-radius: 50%;
+    background: $textcolor;
+    margin: 8px;
+  }
+  a:hover,a:active {
+    @include border(1px, $textcolor);
+    background: $reverse;
+  }
+  a.instagram {
+    background-image: url(../../assets/img/social-instagram.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  a.instagram:hover,  a.instagram:active, {
+    background-image: url(../../assets/img/social-instagram-reverse.jpg);
+  }
+
+  a.twitter {
+    background-image: url(../../assets/img/social-twitter.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  a.twitter:hover,  a.twitter:active, {
+    background-image: url(../../assets/img/social-twitter-reverse.jpg);
+  }
+
+  a.periscope {
+    background-image: url(../../assets/img/social-periscope.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  a.periscope:hover,  a.periscope:active, {
+    background-image: url(../../assets/img/social-periscope-reverse.jpg);
+  }
+
+  a.facebook {
+    background-image: url(../../assets/img/social-facebook.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  a.facebook:hover,  a.facebook:active, {
+    background-image: url(../../assets/img/social-facebook-reverse.jpg);
+  }
+
+  a.snapchat {
+    background-image: url(../../assets/img/social-snapchat.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  a.snapchat:hover,  a.snapchat:active, {
+    background-image: url(../../assets/img/social-snapchat-reverse.jpg);
+  }
+
+  a.pinterest {
+    background-image: url(../../assets/img/social-pinterest.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  a.pinterest:hover,  a.pinterest:active, {
+    background-image: url(../../assets/img/social-pinterest-reverse.jpg);
+  }
+
+  a.tumblr {
+    background-image: url(../../assets/img/social-tumblr.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  a.tumblr:hover,  a.tumblr:active, {
+    background-image: url(../../assets/img/social-tumblr-reverse.jpg);
+  }
+
+  a.youtube {
+    background-image: url(../../assets/img/social-youtube.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  a.youtube:hover,  a.youtube:active, {
+    background-image: url(../../assets/img/social-youtube-reverse.jpg);
+  }
+
+  a.googleplus {
+    background-image: url(../../assets/img/social-googleplus.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  a.googleplus:hover,  a.googleplus:active, {
+    background-image: url(../../assets/img/social-googleplus-reverse.jpg);
+  }
+
+}
+
+.newsletter-signup {
+  // @include border(1px, #ff0);
+  border-left: 1px solid $textdetail;
+  padding-left: 40px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-content: space-between;
+  label {
+    // @include border(1px, #f0f);
+    font: {
+      family: $boldfont;
+      weight: bold;
+    }
+    color: $reverse;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }
+  .input-row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-content: center;
+
+    input {
+      @include size(40vw, 48px);
+      @include border(1px, $reverse);
+      @include cushion(10px 20px, 20px 0);
+      @include min-max-width(350px,670px);
+      background: $textcolor;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+    }
+    button {
+      @include size(48px,48px)
+      @include border(1px, $reverse);
+      @include cushion(0, 20px 0);
+      border-left: 0;
+      background-color: $textcolor;
+      background-image: url(../../assets/img/button-chevron-right.jpg);
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: $reverse;
+      background-image: url(../../assets/img/button-chevron-right-reverse.jpg);
+    }
+  }
+}
