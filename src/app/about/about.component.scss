@@ -1,0 +1,37 @@
+@import '~sass/variables';
+@import '~sass/mixins';
+@import '~sass/styles';
+
+.about-container {
+  @include cushion(0, 58px 40px);
+  float: left;
+  width: 30%;
+}
+
+h2 {
+  font: {
+    family: $boldfont;
+    size: 1rem;
+  }
+  margin-bottom: 1.35rem;
+  color: $textcolor;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+}
+
+p {
+  font: {
+    family: $lightfont;
+    size: .95rem;
+  }
+  margin-bottom: 1.35rem;
+  color: $textcolor;
+}
+
+a {
+  color: $textcolor;
+}
+
+a:hover, a:active {
+  color: $zagatred;
+}
