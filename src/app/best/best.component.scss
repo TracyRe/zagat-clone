@@ -3,50 +3,58 @@
 @import '~sass/styles';
 
 .focus-container {
-  @include size(100%, 400px);
-  @include cushion(0, 0 auto);
+  // @include border(1px, #f0f);
+  @include cushion(0, 80px auto 0 auto);
+  border-bottom: 1px solid $bgcolor;
   max-width: 1200px;
   max-height: 400px;
-  // @include border(1px, #fff);
-  background-image: url(../../assets/img/portland.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0% 50%;
-  background-color: blue; // this lets me know if the photo is not covering the area as it should
-}
+  .image {
+    @include size(100%, 400px);
+    position: relative;
+    z-index: 120;
+    background-image: url(../../assets/img/portland.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 50%;
+    background-color: blue; // this lets me know if the photo is not covering the area as it should
 
-.focus-content {
-  @include border(2px, #fff);
-  @include cushion(40px, 40px);
-  height: 320px;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-around;
-  align-items: center;
-  h1 {
-    font: {
-      family: 'DomaineTextTest-BlackItalic', 'Times New Roman', serif;
-      size: 40px;
-      weight: bold;
-      style: italic;
-    }
-    color: #fff;
   }
-  .focus-button-row {
-    width: 445px;
+  .focus-content {
+    @include border(2px, #fff);
+    @include cushion(40px, 40px);
+    position: relative;
+    bottom: 400px;
+    z-index: 140;
+    height: 320px;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    text-transform: uppercase;
-    color: #fff;
-
-    a {
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    h1 {
+      font: {
+        family: $stylefont;
+        size: 40px;
+        weight: bold;
+        style: italic;
+      }
       color: #fff;
     }
+    .focus-button-row {
+      width: 445px;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      text-transform: uppercase;
+      color: #fff;
 
-    a:hover, a:active {
-      color: $zagatred;
-      text-decoration: none;
+      a {
+        color: #fff;
+      }
+
+      a:hover, a:active {
+        color: $zagatred;
+        text-decoration: none;
+      }
     }
   }
 }
