@@ -1,0 +1,40 @@
+@import '~sass/variables';
+@import '~sass/mixins';
+@import '~sass/styles';
+
+.cities-container {
+  @include cushion(0, 58px 40px);
+  float: right;
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-column-gap: 10px;
+}
+
+h2 {
+  font: {
+    family: $boldfont;
+    size: 1rem;
+  }
+  margin-bottom: 1.35rem;
+  color: $textcolor;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+}
+
+p {
+  font: {
+    family: $lightfont;
+    size: .95rem;
+  }
+  margin-bottom: 1.35rem;
+  color: $textcolor;
+}
+
+a {
+  color: $textcolor;
+}
+
+a:hover, a:active {
+  color: $zagatred;
+}

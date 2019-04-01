@@ -1,3 +1,5 @@
-<p>
-  cities works!
-</p>
+<div class="cities-container">
+  <div *ngFor="let city of childCityList">
+      <p><a href="https://www.zagat.com/{{city}}">{{city.name}}</a></p>
+  </div>
+</div>
