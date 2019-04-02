@@ -4,19 +4,16 @@
 
 .cities-container {
   @include border(1px, #ff0);
-  // @include cushion(0, 58px 40px 0 20%);
-  padding-top: 58px;
-  padding-left: 40px;
-  margin-left: 25%;
-  float: right;
-  clear: both;
-  width: 75%;
+  @include cushion(58px 0 0 68px, 0);
+  // padding-top: 58px;
+  // padding-left: 40px;
+  float: left;
+  width: 65%;
   display: grid;
   grid-template-columns: repeat(4,1fr);
   grid-template-rows: repeat(10, 1fr);
   grid-column-gap: 10px;
   grid-auto-flow: column;
-  position: relative;
 }
 
 h2 {
