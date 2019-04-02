@@ -3,10 +3,8 @@
 @import '~sass/styles';
 
 .cities-container {
-  @include border(1px, #ff0);
+  // @include border(1px, #ff0);
   @include cushion(58px 0 0 68px, 0);
-  // padding-top: 58px;
-  // padding-left: 40px;
   float: left;
   width: 65%;
   display: grid;
