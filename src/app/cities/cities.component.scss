@@ -3,12 +3,20 @@
 @import '~sass/styles';
 
 .cities-container {
-  @include cushion(0, 58px 40px);
+  @include border(1px, #ff0);
+  // @include cushion(0, 58px 40px 0 20%);
+  padding-top: 58px;
+  padding-left: 40px;
+  margin-left: 25%;
   float: right;
-  width: 70%;
+  clear: both;
+  width: 75%;
   display: grid;
   grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(10, 1fr);
   grid-column-gap: 10px;
+  grid-auto-flow: column;
+  position: relative;
 }
 
 h2 {
@@ -20,6 +28,7 @@ h2 {
   color: $textcolor;
   text-transform: uppercase;
   letter-spacing: .15rem;
+  grid-column: 1 / span 4;
 }
 
 p {

@@ -1,0 +1,24 @@
+@import '~sass/variables';
+@import '~sass/mixins';
+@import '~sass/styles';
+
+
+.footer {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: stretch;
+  .container {
+    color: $textdetail;
+  }
+
+
+  .logo {
+    @include size(216px,100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: none;
+  }
+}

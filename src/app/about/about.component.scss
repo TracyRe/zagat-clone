@@ -3,9 +3,12 @@
 @import '~sass/styles';
 
 .about-container {
-  @include cushion(0, 58px 40px);
+  @include border(1px, #0f0);
+  // @include cushion(0, 58px 40px);
+  padding-top: 58px;
+  padding-left: 40px;
+  width: 20%;
   float: left;
-  width: 30%;
 }
 
 h2 {
