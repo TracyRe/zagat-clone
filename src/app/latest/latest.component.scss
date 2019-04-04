@@ -82,8 +82,8 @@
     @include size(375px, 146px);
     // @include border(1px, #f0f);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0% 50%;
+    background-size: 150%;;
+    background-position: center;
   }
   .textblock {
     // @include border(1px, #ff0);
@@ -121,7 +121,7 @@
     // @include border(1px, #f0f);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0% 50%;
+    background-position: center;
   }
   .textblock {
     @include size(255px,121px);
