@@ -4,9 +4,9 @@
 
 .cities-container {
   // @include border(1px, #ff0);
-  @include cushion(58px 0 0 68px, 0);
+  @include cushion(58px 0 0 100px, 0);
   float: left;
-  width: 65%;
+  width: calc(100% - 216px);
   display: grid;
   grid-template-columns: repeat(4,1fr);
   grid-template-rows: repeat(10, 1fr);

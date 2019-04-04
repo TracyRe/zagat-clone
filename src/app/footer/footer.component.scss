@@ -21,4 +21,16 @@
     align-items: center;
     flex: none;
   }
+
+  .copyright {
+    font: {
+      family: $lightfont;
+      size: .75rem;
+    }
+    margin-left: 100px;
+    float: left;
+    width: 65%;
+    color: $textsecondary;
+    align-self: center;
+  }
 }
