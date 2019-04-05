@@ -38,6 +38,7 @@ extra.txt
 svg-icon-code.txt
 *.afphoto
 *.xlsx
+*.rtf
 
 # e2e
 /e2e/*.js
