@@ -5,7 +5,7 @@ import { CityComponent } from './city/city.component';
 
 const appRoutes: Routes = [
   {
-    path: 'citys/:id',
+    path: '',
     component: CityComponent
   }
 ];
