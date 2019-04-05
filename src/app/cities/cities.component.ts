@@ -1,10 +1,13 @@
 import { Component, Input, OnInit } from '@angular/core';
+
 import { City } from '../models/city.model';
+import { CityService } from '../city.service';
 
 @Component({
   selector: 'app-cities',
   templateUrl: './cities.component.html',
-  styleUrls: ['./cities.component.scss']
+  styleUrls: ['./cities.component.scss'],
+  providers: [CityService]
 })
 export class CitiesComponent implements OnInit {
 
@@ -12,7 +15,9 @@ export class CitiesComponent implements OnInit {
 @Input() childCityList: City[];
 
 
-  constructor() { }
+  constructor(
+    private cityService: CityService
+  ) { }
 
   ngOnInit() {
   }

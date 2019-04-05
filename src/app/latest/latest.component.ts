@@ -1,13 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 
+import { CityService } from '../city.service';
+
+
 @Component({
   selector: 'app-latest',
   templateUrl: './latest.component.html',
-  styleUrls: ['./latest.component.scss']
+  styleUrls: ['./latest.component.scss'],
+  providers: [CityService]
 })
 export class LatestComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private cityService: CityService
+  ) { }
 
   ngOnInit() {
   }
