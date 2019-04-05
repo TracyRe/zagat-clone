@@ -17,4 +17,8 @@ export class CityService {
     return this.citys;
   }
 
+  getCityById(cityId: string){
+    return this.database.object('citys/' + cityId);
+  }
+
 }
