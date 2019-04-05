@@ -7,10 +7,8 @@ _Author_ **Tracy Reith**
 
 1. [Description](#description)
 1. [Learning Objective](#learning-objective)
+1. [Development Plan](#development-plan)
 1. [Target Audience/Users](#target-audience/users)
-1. [User Stories](#user-stories)
-1. [Product Requirements](#product-requirements)
-1. [Non-technical Requirements](#non-technical-requirements)
 1. [Development Specs](#development-specs)
 1. [Stretch Goals](#stretch-goals)
 1. [Installation](#installation)
@@ -30,7 +28,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * Apply best practices of Model-View-Component architecture
 * Practice using API
 
-## Development Plan (Phase 1)
+## Development Plan
+### Phase 1
 _Phase 1 focuses on replicating the UI only. Database and API will be addressed in Phase 2_
 
 1. ~~Analyze front page~~ _DONE_
@@ -38,44 +37,44 @@ _Phase 1 focuses on replicating the UI only. Database and API will be addressed 
  * ~~Determine UI behavior, e.g., responsiveness, rollovers~~
 1. ~~Collect assets~~ _DONE_
 1. ~~Create components in project~~ _DONE_
-1. For each: Build component
- * Basic layout
- * Add images
- * Apply styling
- * Add UI behaviors
+1. ~~For each: Build component~~
+ * ~~Basic layout~~ _DONE_
+ * ~~Add images~~ _DONE_
+ * ~~Apply styling~~ _DONE_
+ * Add UI behaviors - moved to Stretch Goals
+
+### Phase 2
+_API has been moved to Stretch Goals_
+
+1. ~~Transfer city-specific assets to external storage~~ _DONE_
+1. ~~Add Routing~~ _DONE_
+1. ~~Service~~ _DONE_
+1. ~~Create Firebase database~~ _DONE_
+1. ~~Add data for one city to database~~ _DONE_
+1. ~~Connect to database~~ _DONE_
+1. Refactor city-specific elements in code to refer to database
+1. Automatically load default city
 
 ### Assumptions
-Phase 1 will build out the desktop version first.
+* Phase 1 will build out the desktop version first.
+* Only front page will be built
+* No tests created or run
 
 ### Target Audience/Users
 * People who appreciate good food
 * People looking for quality restaurants in a specific city
 
-### User Stories
-**As a** _archetype_,<br>
-**I want** _to be able to do something_,<br>
-**So that** _I can achieve a goal_.
-
-### Product Requirements
-* _requirement_
-* _requirement_
-* _requirement_
-
-### Non-technical Requirements
-* _requirement_
-* _requirement_
-* _requirement_
-
 ### Development Specs
 
 Specification | Input | Output
 ------------- | ----- | ------
-_spec_ | _input_ | _output_
+_GIVEN_ a city exists AND information for that city has been entered in the database, <br>_WHEN_ the user selects that city, <br>_THEN_ the system will display information in the Best and Latest sections on the front page | Select 'Portland' | **Best section:** City's Best Portland<br> **Latest section:** Best Restaurants in Portland, New Restaurants and Bars in Portland, OR., Hottest Restaurants and Bars in Portland, OR, Restaurants & Bars Near the Portland Museum of Art, Best Restaurants and Bars Near Portland's Forest Park, 6 Best Things We Ate and Drank at Feast PDX 2017, The 10 Best Things We Ate at Feast Portland 2016
 
 ### Stretch Goals
-* _goal_
-* _goal_
-* _goal_
+* Add more cities to database
+* Add animation effects to images on hover
+* Connect to location API to automatically load local/closest city
+* Refactor layout/styling to be responsive for small form factors/mobile using media queries
 
 ### Installation
 * Clone from https://github.com/TracyRe/zagat-clone.git
@@ -85,12 +84,7 @@ _spec_ | _input_ | _output_
  * Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 * Build
  * Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-* Running unit tests
- * Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-* Running end-to-end tests
- * Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-* Further help
- * To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 ### Known Bugs
 * None identified
@@ -99,8 +93,7 @@ _spec_ | _input_ | _output_
 * HTML
 * Sass with variables and mixins
 * Angular5
-* Firebase
-* Tested with Karma and Protractor
+* Firebase with AngularFire2
 
 ### License
 [MIT](./LICENSE.txt)
