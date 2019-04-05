@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 import { CityService } from '../services/city.service';
-import { FirebaseListObservable } from 'angularfire2/database';
 
 
 @Component({
