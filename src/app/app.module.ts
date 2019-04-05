@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
 
-
+import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { BestComponent } from './best/best.component';
@@ -10,6 +11,7 @@ import { AboutComponent } from './about/about.component';
 import { CitiesComponent } from './cities/cities.component';
 import { FooterComponent } from './footer/footer.component';
 import { SocialComponent } from './social/social.component';
+import { CityComponent } from './city/city.component';
 
 
 @NgModule({
@@ -21,10 +23,13 @@ import { SocialComponent } from './social/social.component';
     AboutComponent,
     CitiesComponent,
     FooterComponent,
-    SocialComponent
+    SocialComponent,
+    CityComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
