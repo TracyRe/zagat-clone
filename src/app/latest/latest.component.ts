@@ -10,6 +10,7 @@ import { CityService } from '../services/city.service';
   providers: [CityService]
 })
 export class LatestComponent implements OnInit {
+  citys: FirebaseListObservable<any[]>;
 
   constructor(
     private cityService: CityService

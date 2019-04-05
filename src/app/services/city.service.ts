@@ -1,13 +1,20 @@
 import { Injectable } from '@angular/core';
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
+
 import { City } from '../models/city.model';
 
 @Injectable()
 export class CityService {
+  citys: FirebaseListObservable<any[]>;
 
-  constructor() { }
+  constructor(
+    private database: AngularFireDatabase
+  ) {
+    this.citys = database.list('citys');
+  }
 
   getCitys() {
-    return CITY;
+    return this.citys;
   }
 
 }
