@@ -21,6 +21,7 @@ export class CitiesComponent implements OnInit {
 
   ngOnInit() {
     this.citys = this.cityService.getCitys();
+    console.log(this.router.url);
   }
 
 

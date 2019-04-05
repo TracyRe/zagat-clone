@@ -7,6 +7,10 @@ const appRoutes: Routes = [
   {
     path: '',
     component: CityComponent
+  },
+  {
+    path: 'citys/:id',
+    component: CityComponent
   }
 ];
 
