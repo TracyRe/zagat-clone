@@ -7,13 +7,13 @@
   <!-- COLUMN 1 -->
   <div class="latest-col1-container">
     <div class="card1 spotlight">
-      <div class="image"></div>
+      <div class="image" style="background-image:url({{(cityToDisplay | async)?.latestCard1Img}})"></div>
       <div class="textblock">
         <div>
           <img src="../../assets/img/best-trophy.jpg" alt="">
         </div>
-        <h2>Best Restaurants in Portland</h2>
-        <div class="date">July 13, 2018</div>
+        <h2>{{(cityToDisplay | async)?.latestCard1Title}}</h2>
+        <div class="date">{{(cityToDisplay | async)?.latestCard1Date}}</div>
       </div>
     </div>
   </div>
@@ -21,62 +21,62 @@
   <!-- COLUMN 2 -->
   <div class="latest-col2-container">
     <div class="card2 spotlight">
-      <div class="image"></div>
+      <div class="image" style="background-image:url({{(cityToDisplay | async)?.latestCard2Img}})"></div>
       <div class="textblock">
         <div>
           <img src="../../assets/img/best-trophy.jpg" alt="">
         </div>
 
-        <h2>New Restaurants and Bars in Portland, OR</h2>
-        <div class="place-count">6 Places</div>
+        <h2>{{(cityToDisplay | async)?.latestCard2Title}}</h2>
+        <div class="place-count">{{(cityToDisplay | async)?.latestCard2PlaceCount}} Places</div>
 
       </div>
     </div>
     <div class="card3 spotlight">
-      <div class="image"></div>
+      <div class="image" style="background-image:url({{(cityToDisplay | async)?.latestCard3Img}})"></div>
       <div class="textblock">
         <div>
           <img src="../../assets/img/best-trophy.jpg" alt="">
         </div>
 
-        <h2>Hottest Restaurants and Bars in Portland, OR</h2>
-        <div class="place-count">6 Places</div>
+        <h2>{{(cityToDisplay | async)?.latestCard3Title}}</h2>
+        <div class="place-count">{{(cityToDisplay | async)?.latestCard3PlaceCount}} Places</div>
 
       </div>
     </div>
   </div>
   <!-- COLUMN 3 -->
   <div class="latest-col3-container">
-    <div class="card4">
+    <div class="card4" style="background-image:url({{(cityToDisplay | async)?.latestCard4Img}})">
       <div class="image"></div>
       <div class="textblock">
 
-        <h2>Restaurants & Bars Near the Portland Museum of Art</h2>
+        <h2>{{(cityToDisplay | async)?.latestCard4Title}}</h2>
 
       </div>
     </div>
     <div class="card5">
-      <div class="image"></div>
+      <div class="image" style="background-image:url({{(cityToDisplay | async)?.latestCard5Img}})"></div>
       <div class="textblock">
 
-        <h2>Best Restaurants and Bars Near Portland's Forest Park</h2>
+        <h2>{{(cityToDisplay | async)?.latestCard5Title}}</h2>
 
       </div>
     </div>
 
     <div class="card6">
-      <div class="image"></div>
+      <div class="image" style="background-image:url({{(cityToDisplay | async)?.latestCard6Img}})"></div>
       <div class="textblock">
 
-        <h2>6 Best Things We Ate and Drank at Feast PDX 2017</h2>
+        <h2>{{(cityToDisplay | async)?.latestCard6Title}}</h2>
 
       </div>
     </div>
     <div class="card7">
-      <div class="image"></div>
+      <div class="image" style="background-image:url({{(cityToDisplay | async)?.latestCard7Img}})"></div>
       <div class="textblock">
 
-        <h2>The 10 Best Things We Ate at Feast Portland 2016</h2>
+        <h2>{{(cityToDisplay | async)?.latestCard7Title}}</h2>
 
       </div>
     </div>

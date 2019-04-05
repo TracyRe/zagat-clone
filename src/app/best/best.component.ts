@@ -25,7 +25,7 @@ export class BestComponent implements OnInit {
     private router: Router,
     private cityService: CityService,
     private route: ActivatedRoute,
-    private location: Location,
+    private location: Location
   ) { }
 
 
