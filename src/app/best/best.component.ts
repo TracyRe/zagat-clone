@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { FirebaseListObservable } from 'angularfire2/database';
 import { FirebaseObjectObservable } from 'angularfire2/database';
@@ -18,12 +18,7 @@ export class BestComponent implements OnInit {
   cityId: string;
   cityToDisplay;
 
-  loadCity(clickedCity) {
-    this.router.navigate(['citys', clickedCity.$key]);
-  };
-
   constructor(
-    private router: Router,
     private cityService: CityService,
     private route: ActivatedRoute,
     private location: Location
