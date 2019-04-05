@@ -37,6 +37,7 @@ testem.log
 extra.txt
 svg-icon-code.txt
 *.afphoto
+*.xlsx
 
 # e2e
 /e2e/*.js
