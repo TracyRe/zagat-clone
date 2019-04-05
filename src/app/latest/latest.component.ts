@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
 import { FirebaseListObservable } from 'angularfire2/database';
 import { FirebaseObjectObservable } from 'angularfire2/database';
 
