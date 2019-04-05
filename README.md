@@ -52,7 +52,7 @@ _API has been moved to Stretch Goals_
 1. ~~Create Firebase database~~ _DONE_
 1. ~~Add data for one city to database~~ _DONE_
 1. ~~Connect to database~~ _DONE_
-1. Refactor city-specific elements in code to refer to database
+1. ~~Refactor city-specific elements in code to refer to database~~ _DONE_
 1. Automatically load default city
 
 ### Assumptions
@@ -77,6 +77,7 @@ _GIVEN_ a city exists AND information for that city has been entered in the data
 * Refactor layout/styling to be responsive for small form factors/mobile using media queries
 
 ### Installation
+* View deployed site at https://zagat-clone.firebaseapp.com
 * Clone from https://github.com/TracyRe/zagat-clone.git
 * Development server
  * Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
